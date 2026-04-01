@@ -1,12 +1,2 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_label	https://cdm.ovh/rsm/schemes/status#archived	rdfs:label	
-ERROR	missing_label	https://cdm.ovh/rsm/schemes/status#corrected	rdfs:label	
-ERROR	missing_label	https://cdm.ovh/rsm/schemes/status#current	rdfs:label	
-ERROR	missing_label	https://cdm.ovh/rsm/schemes/status#estimated	rdfs:label	
-ERROR	missing_label	https://cdm.ovh/rsm/schemes/status#forecast	rdfs:label	
-ERROR	missing_label	https://cdm.ovh/rsm/schemes/status#observed	rdfs:label	
-ERROR	missing_label	https://cdm.ovh/rsm/schemes/status#planned	rdfs:label	
-ERROR	missing_label	https://cdm.ovh/rsm/schemes/status#status_scheme	rdfs:label	
-ERROR	missing_ontology_description	https://cdm.ovh/rsm/schemes/status	dc:description	
 ERROR	missing_ontology_license	https://cdm.ovh/rsm/schemes/status	dc:license	
-ERROR	missing_ontology_title	https://cdm.ovh/rsm/schemes/status	dc:title	

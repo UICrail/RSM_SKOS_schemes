@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://cdm.ovh/rsm/schemes/status#"
      xml:base="https://cdm.ovh/rsm/schemes/status"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -9,6 +10,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="https://cdm.ovh/rsm/schemes/status">
+        <dc:description>terminology for the status of most entities</dc:description>
+        <dc:license>CC BY-SA 4.0</dc:license>
+        <dc:title>Status concept scheme</dc:title>
         <rdfs:label xml:lang="en">Status concept scheme</rdfs:label>
     </owl:Ontology>
     
@@ -22,6 +26,24 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
@@ -94,6 +116,7 @@
     <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#archived">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">archived</rdfs:label>
         <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
         <skos:prefLabel xml:lang="en">archived</skos:prefLabel>
         <skos:topConceptOf rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
@@ -106,6 +129,7 @@
     <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#corrected">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">corrected</rdfs:label>
         <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
         <skos:prefLabel xml:lang="en">corrected</skos:prefLabel>
         <skos:relatedMatch rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
@@ -119,6 +143,7 @@
     <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#current">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">current</rdfs:label>
         <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
         <skos:prefLabel xml:lang="en">current</skos:prefLabel>
     </owl:NamedIndividual>
@@ -130,6 +155,7 @@
     <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#estimated">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">estimated</rdfs:label>
         <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
         <skos:prefLabel xml:lang="en">estimated</skos:prefLabel>
         <skos:relatedMatch rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
@@ -143,6 +169,7 @@
     <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#forecast">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">forecast</rdfs:label>
         <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
         <skos:prefLabel xml:lang="en">forecast</skos:prefLabel>
         <skos:relatedMatch rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
@@ -156,6 +183,7 @@
     <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#observed">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">observed</rdfs:label>
         <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
         <skos:prefLabel xml:lang="en">observed</skos:prefLabel>
         <skos:topConceptOf rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
@@ -168,6 +196,7 @@
     <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#planned">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">planned</rdfs:label>
         <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
         <skos:prefLabel xml:lang="en">planned</skos:prefLabel>
         <skos:relatedMatch rdf:resource="http://www.w3.org/ns/prov#Plan"/>
@@ -181,6 +210,7 @@
     <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#status_scheme">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:comment xml:lang="en">Scheme covers planned, observed, estimated, forecast, corrected, archived</rdfs:comment>
+        <rdfs:label xml:lang="en">status_scheme</rdfs:label>
         <skos:hasTopConcept rdf:resource="https://cdm.ovh/rsm/schemes/status#archived"/>
         <skos:hasTopConcept rdf:resource="https://cdm.ovh/rsm/schemes/status#corrected"/>
         <skos:hasTopConcept rdf:resource="https://cdm.ovh/rsm/schemes/status#current"/>
