@@ -3,13 +3,17 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @base <https://cdm.ovh/rsm/schemes/status#> .
 
 <https://cdm.ovh/rsm/schemes/status> rdf:type owl:Ontology ;
-                                      rdfs:label "Status concept scheme"@en .
+                                      rdfs:label "Status concept scheme"@en ;
+                                      dc:description "terminology for the status of most entities" ;
+                                      dc:license "CC BY-SA 4.0" ;
+                                      dc:title "Status concept scheme" .
 
 #################################################################
 #    Annotation properties
@@ -56,6 +60,7 @@ skos:ConceptScheme rdf:type owl:Class .
                    skos:Concept ;
           rdfs:comment ""@en ;
           skos:inScheme :status_scheme ;
+          rdfs:label "archived"@en ;
           skos:prefLabel "archived"@en ;
           skos:topConceptOf :status_scheme .
 
@@ -65,6 +70,7 @@ skos:ConceptScheme rdf:type owl:Class .
                     skos:Concept ;
            rdfs:comment ""@en ;
            skos:inScheme :status_scheme ;
+           rdfs:label "corrected"@en ;
            skos:prefLabel "corrected"@en ;
            skos:relatedMatch prov:wasDerivedFrom ;
            skos:topConceptOf :status_scheme .
@@ -75,6 +81,7 @@ skos:ConceptScheme rdf:type owl:Class .
                   skos:Concept ;
                   rdfs:comment ""@en ;
                   skos:inScheme :status_scheme ;
+                  rdfs:label "current"@en ;
                   skos:prefLabel "current"@en .
 
 
@@ -83,6 +90,7 @@ skos:ConceptScheme rdf:type owl:Class .
                     skos:Concept ;
            rdfs:comment ""@en ;
            skos:inScheme :status_scheme ;
+           rdfs:label "estimated"@en ;
            skos:prefLabel "estimated"@en ;
            skos:relatedMatch prov:wasDerivedFrom ;
            skos:topConceptOf :status_scheme .
@@ -93,6 +101,7 @@ skos:ConceptScheme rdf:type owl:Class .
                    skos:Concept ;
           rdfs:comment ""@en ;
           skos:inScheme :status_scheme ;
+          rdfs:label "forecast"@en ;
           skos:prefLabel "forecast"@en ;
           skos:relatedMatch prov:wasDerivedFrom ;
           skos:topConceptOf :status_scheme .
@@ -103,6 +112,7 @@ skos:ConceptScheme rdf:type owl:Class .
                    skos:Concept ;
           rdfs:comment ""@en ;
           skos:inScheme :status_scheme ;
+          rdfs:label "observed"@en ;
           skos:prefLabel "observed"@en ;
           skos:topConceptOf :status_scheme .
 
@@ -112,6 +122,7 @@ skos:ConceptScheme rdf:type owl:Class .
                   skos:Concept ;
          rdfs:comment ""@en ;
          skos:inScheme :status_scheme ;
+         rdfs:label "planned"@en ;
          skos:prefLabel "planned"@en ;
          skos:relatedMatch prov:Plan ;
          skos:topConceptOf :status_scheme .
@@ -128,6 +139,7 @@ skos:ConceptScheme rdf:type owl:Class .
                                   :forecast ,
                                   :observed ,
                                   :planned ;
+               rdfs:label "status_scheme"@en ;
                skos:prefLabel "status_scheme"@en .
 
 
