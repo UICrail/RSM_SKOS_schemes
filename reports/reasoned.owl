@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://cdm.ovh/rsm/schemes/status#"
+     xml:base="https://cdm.ovh/rsm/schemes/status"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="https://cdm.ovh/rsm/schemes/status">
+        <rdfs:label xml:lang="en">Status concept scheme</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#relatedMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://cdm.ovh/rsm/schemes/status#archived -->
+
+    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#archived">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
+        <skos:prefLabel xml:lang="en">archived</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cdm.ovh/rsm/schemes/status#corrected -->
+
+    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#corrected">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
+        <skos:prefLabel xml:lang="en">corrected</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+        <skos:topConceptOf rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cdm.ovh/rsm/schemes/status#current -->
+
+    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#current">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
+        <skos:prefLabel xml:lang="en">current</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cdm.ovh/rsm/schemes/status#estimated -->
+
+    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#estimated">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
+        <skos:prefLabel xml:lang="en">estimated</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+        <skos:topConceptOf rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cdm.ovh/rsm/schemes/status#forecast -->
+
+    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#forecast">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
+        <skos:prefLabel xml:lang="en">forecast</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+        <skos:topConceptOf rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cdm.ovh/rsm/schemes/status#observed -->
+
+    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#observed">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
+        <skos:prefLabel xml:lang="en">observed</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cdm.ovh/rsm/schemes/status#planned -->
+
+    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#planned">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
+        <skos:prefLabel xml:lang="en">planned</skos:prefLabel>
+        <skos:relatedMatch rdf:resource="http://www.w3.org/ns/prov#Plan"/>
+        <skos:topConceptOf rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cdm.ovh/rsm/schemes/status#status_scheme -->
+
+    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#status_scheme">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Scheme covers planned, observed, estimated, forecast, corrected, archived</rdfs:comment>
+        <skos:hasTopConcept rdf:resource="https://cdm.ovh/rsm/schemes/status#archived"/>
+        <skos:hasTopConcept rdf:resource="https://cdm.ovh/rsm/schemes/status#corrected"/>
+        <skos:hasTopConcept rdf:resource="https://cdm.ovh/rsm/schemes/status#current"/>
+        <skos:hasTopConcept rdf:resource="https://cdm.ovh/rsm/schemes/status#estimated"/>
+        <skos:hasTopConcept rdf:resource="https://cdm.ovh/rsm/schemes/status#forecast"/>
+        <skos:hasTopConcept rdf:resource="https://cdm.ovh/rsm/schemes/status#observed"/>
+        <skos:hasTopConcept rdf:resource="https://cdm.ovh/rsm/schemes/status#planned"/>
+        <skos:prefLabel xml:lang="en">status_scheme</skos:prefLabel>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+
