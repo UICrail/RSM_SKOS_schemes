@@ -1,6 +1,10 @@
-# Ontology-template
+# Purpose
 
-Template for ontologies. Structured in view of using shared **continuous integration** and **documentation** workflows.
+Provide SKOS concepts and concept schemes for use with, inter alia, RSM ontologies.
+
+# About the ontology template
+
+The template is structured in view of using shared **continuous integration** and **documentation** workflows.
 
 Currently, the following workflows are pre-defined:
 
