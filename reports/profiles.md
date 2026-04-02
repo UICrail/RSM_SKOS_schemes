@@ -1,7 +1,7 @@
 # OWL Profile Validation Report
 
-**Ontology**: ontology/src/side.ttl
-**Date**: 2026-04-02 10:11:03 UTC
+**Ontology**: ontology/src/status.ttl
+**Date**: 2026-04-02 10:12:44 UTC
 
 ---
 
