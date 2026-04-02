@@ -57,6 +57,10 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 ###  http://www.w3.org/2004/02/skos/core#scopeNote
 skos:scopeNote rdf:type owl:AnnotationProperty .
 
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Object Properties
