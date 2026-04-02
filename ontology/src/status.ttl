@@ -7,12 +7,13 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/cd/terms/> .
 @base <https://cdm.ovh/rsm/schemes/status#> .
 
 <https://cdm.ovh/rsm/schemes/status> rdf:type owl:Ontology ;
                                       dc:description "terminology for the status of most entities" ;
-                                      dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
                                       dc:title "Status concept scheme" ;
+                                      <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-sa/4.0/" ;
                                       rdfs:label "Status concept scheme"@en .
 
 #################################################################
@@ -29,6 +30,10 @@ dc:license rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/elements/1.1/title
 dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#hasTopConcept
