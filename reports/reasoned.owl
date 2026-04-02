@@ -8,11 +8,13 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dcterms="http://purl.org/cd/terms/">
     <owl:Ontology rdf:about="https://cdm.ovh/rsm/schemes/status">
         <dc:description>terminology for the status of most entities</dc:description>
-        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <dc:title>Status concept scheme</dc:title>
+        <terms:license>https://creativecommons.org/licenses/by-sa/4.0/</terms:license>
         <rdfs:label xml:lang="en">Status concept scheme</rdfs:label>
     </owl:Ontology>
     
@@ -44,6 +46,12 @@
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
