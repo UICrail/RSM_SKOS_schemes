@@ -1,19 +1,25 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://cdm.ovh/rsm/schemes/status#"
-     xml:base="https://cdm.ovh/rsm/schemes/status"
+<rdf:RDF xmlns="https://cdm.ovh/rsm/schemes/side#"
+     xml:base="https://cdm.ovh/rsm/schemes/side"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
-    <owl:Ontology rdf:about="https://cdm.ovh/rsm/schemes/status">
-        <dc:description>terminology for the status of most entities</dc:description>
-        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <dc:title>Status concept scheme</dc:title>
-        <rdfs:label xml:lang="en">Status concept scheme</rdfs:label>
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://cdm.ovh/rsm/schemes/side">
+        <dc:creator>Airy Magnien</dc:creator>
+        <dc:description>List of terms denoting the faces and sides of, typically, a box-like solid</dc:description>
+        <dc:title xml:lang="en">Sides terminology</dc:title>
+        <dcterms:created>2 April 2024</dcterms:created>
+        <dcterms:license>https://creativecommons.org/licenses/by-sa/4.0/</dcterms:license>
+        <vann:preferredNamespacePrefix>side</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://cdm.ovh/rsm/schemes/side</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">designation of faces (left, right...) can be used in conjunction with the side of the faces (interior, exterior). Again, orientation and polarity shall be disambiguated by the context in which they are expressed.</rdfs:comment>
+        <skos:scopeNote xml:lang="en">Scheme of principal side designations relative to an intrinsic or contextual reference frame. Applicability depends on the geometry, function, or orientation of the entity concerned. The usage context should provide all necessary disambiguation.</skos:scopeNote>
     </owl:Ontology>
     
 
@@ -29,15 +35,15 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/description -->
+    <!-- http://purl.org/dc/elements/1.1/creator -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/license -->
+    <!-- http://purl.org/dc/elements/1.1/description -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
     
 
 
@@ -47,15 +53,33 @@
     
 
 
-    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+    <!-- http://purl.org/dc/terms/created -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
     
 
 
-    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+    <!-- http://purl.org/dc/terms/license -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
     
 
 
@@ -65,15 +89,26 @@
     
 
 
-    <!-- http://www.w3.org/2004/02/skos/core#relatedMatch -->
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
     
 
 
-    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
     
 
 
@@ -111,114 +146,127 @@
     
 
 
-    <!-- https://cdm.ovh/rsm/schemes/status#archived -->
+    <!-- https://cdm.ovh/rsm/schemes/side#Distal -->
 
-    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#archived">
+    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/side#Distal">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:label xml:lang="en">archived</rdfs:label>
-        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
-        <skos:prefLabel xml:lang="en">archived</skos:prefLabel>
-        <skos:topConceptOf rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
+        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/side#Sides_scheme"/>
+        <rdfs:label xml:lang="en">distal</rdfs:label>
+        <skos:prefLabel xml:lang="en">distal</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://cdm.ovh/rsm/schemes/status#corrected -->
+    <!-- https://cdm.ovh/rsm/schemes/side#Front -->
 
-    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#corrected">
+    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/side#Front">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:label xml:lang="en">corrected</rdfs:label>
-        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
-        <skos:prefLabel xml:lang="en">corrected</skos:prefLabel>
-        <skos:relatedMatch rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
-        <skos:topConceptOf rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
+        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/side#Sides_scheme"/>
+        <rdfs:label xml:lang="en">front</rdfs:label>
+        <skos:altLabel xml:lang="en">fore</skos:altLabel>
+        <skos:prefLabel xml:lang="en">front</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://cdm.ovh/rsm/schemes/status#current -->
+    <!-- https://cdm.ovh/rsm/schemes/side#Inside -->
 
-    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#current">
+    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/side#Inside">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:label xml:lang="en">current</rdfs:label>
-        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
-        <skos:prefLabel xml:lang="en">current</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/side#Sides_scheme"/>
+        <rdfs:label xml:lang="en">inside</rdfs:label>
+        <skos:altLabel xml:lang="en">interior</skos:altLabel>
+        <skos:prefLabel xml:lang="en">inside</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://cdm.ovh/rsm/schemes/status#estimated -->
+    <!-- https://cdm.ovh/rsm/schemes/side#Left -->
 
-    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#estimated">
+    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/side#Left">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:label xml:lang="en">estimated</rdfs:label>
-        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
-        <skos:prefLabel xml:lang="en">estimated</skos:prefLabel>
-        <skos:relatedMatch rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
-        <skos:topConceptOf rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
+        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/side#Sides_scheme"/>
+        <rdfs:label xml:lang="en">left</rdfs:label>
+        <skos:prefLabel xml:lang="en">left</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://cdm.ovh/rsm/schemes/status#forecast -->
+    <!-- https://cdm.ovh/rsm/schemes/side#Lower -->
 
-    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#forecast">
+    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/side#Lower">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:label xml:lang="en">forecast</rdfs:label>
-        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
-        <skos:prefLabel xml:lang="en">forecast</skos:prefLabel>
-        <skos:relatedMatch rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
-        <skos:topConceptOf rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
+        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/side#Sides_scheme"/>
+        <rdfs:label xml:lang="en">lower</rdfs:label>
+        <skos:altLabel xml:lang="en">bottom</skos:altLabel>
+        <skos:prefLabel xml:lang="en">lower</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://cdm.ovh/rsm/schemes/status#observed -->
+    <!-- https://cdm.ovh/rsm/schemes/side#Outside -->
 
-    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#observed">
+    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/side#Outside">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:label xml:lang="en">observed</rdfs:label>
-        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
-        <skos:prefLabel xml:lang="en">observed</skos:prefLabel>
-        <skos:topConceptOf rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
+        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/side#Sides_scheme"/>
+        <rdfs:label xml:lang="en">outside</rdfs:label>
+        <skos:altLabel xml:lang="en">exterior</skos:altLabel>
+        <skos:prefLabel xml:lang="en">outside</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://cdm.ovh/rsm/schemes/status#planned -->
+    <!-- https://cdm.ovh/rsm/schemes/side#Proximal -->
 
-    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#planned">
+    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/side#Proximal">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:label xml:lang="en">planned</rdfs:label>
-        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
-        <skos:prefLabel xml:lang="en">planned</skos:prefLabel>
-        <skos:relatedMatch rdf:resource="http://www.w3.org/ns/prov#Plan"/>
-        <skos:topConceptOf rdf:resource="https://cdm.ovh/rsm/schemes/status#status_scheme"/>
+        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/side#Sides_scheme"/>
+        <rdfs:label xml:lang="en">proximal</rdfs:label>
+        <skos:prefLabel xml:lang="en">proximal</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://cdm.ovh/rsm/schemes/status#status_scheme -->
+    <!-- https://cdm.ovh/rsm/schemes/side#Rear -->
 
-    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/status#status_scheme">
+    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/side#Rear">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/side#Sides_scheme"/>
+        <rdfs:label xml:lang="en">rear</rdfs:label>
+        <skos:altLabel xml:lang="en">aft</skos:altLabel>
+        <skos:prefLabel xml:lang="en">rear</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cdm.ovh/rsm/schemes/side#Right -->
+
+    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/side#Right">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/side#Sides_scheme"/>
+        <rdfs:label xml:lang="en">right</rdfs:label>
+        <skos:prefLabel xml:lang="en">right</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cdm.ovh/rsm/schemes/side#Sides_scheme -->
+
+    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/side#Sides_scheme">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">Scheme covers planned, observed, estimated, forecast, corrected, archived</rdfs:comment>
-        <rdfs:label xml:lang="en">status_scheme</rdfs:label>
-        <skos:hasTopConcept rdf:resource="https://cdm.ovh/rsm/schemes/status#archived"/>
-        <skos:hasTopConcept rdf:resource="https://cdm.ovh/rsm/schemes/status#corrected"/>
-        <skos:hasTopConcept rdf:resource="https://cdm.ovh/rsm/schemes/status#current"/>
-        <skos:hasTopConcept rdf:resource="https://cdm.ovh/rsm/schemes/status#estimated"/>
-        <skos:hasTopConcept rdf:resource="https://cdm.ovh/rsm/schemes/status#forecast"/>
-        <skos:hasTopConcept rdf:resource="https://cdm.ovh/rsm/schemes/status#observed"/>
-        <skos:hasTopConcept rdf:resource="https://cdm.ovh/rsm/schemes/status#planned"/>
-        <skos:prefLabel xml:lang="en">status_scheme</skos:prefLabel>
+        <rdfs:label xml:lang="en">Sides scheme</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cdm.ovh/rsm/schemes/side#Upper -->
+
+    <owl:NamedIndividual rdf:about="https://cdm.ovh/rsm/schemes/side#Upper">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://cdm.ovh/rsm/schemes/side#Sides_scheme"/>
+        <rdfs:label xml:lang="en">upper</rdfs:label>
+        <skos:altLabel xml:lang="en">top</skos:altLabel>
+        <skos:prefLabel xml:lang="en">upper</skos:prefLabel>
     </owl:NamedIndividual>
 </rdf:RDF>
 
