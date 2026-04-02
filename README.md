@@ -4,7 +4,7 @@ Provide SKOS concepts and concept schemes for use with, inter alia, RSM ontologi
 
 # Contents
 
-| File | Purpose | URIs | Notes |
+| File | Contents | URIs | Notes |
 | ---- | ------- | ----- | ----- |
 | status.ttl | such as 'actual', 'planned', 'forecast'... | https://cdm.ovh/rsm/schemes/status |  |
 | side.ttl | such as 'left', 'front', 'interior'... | https://cdm.ovh/rsm/schemes/side |  |
