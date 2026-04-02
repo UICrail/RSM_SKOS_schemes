@@ -4,10 +4,10 @@ Provide SKOS concepts and concept schemes for use with, inter alia, RSM ontologi
 
 # Contents
 
-| File | Purpose | Notes |
-| ---- | ------- | ----- |
-| status.ttl | such as 'actual', 'planned', 'forecast'... | |
-| side.ttl | such as 'left', 'front', 'interior'... | |
+| File | Purpose | URIs | Notes |
+| ---- | ------- | ----- | ----- |
+| status.ttl | such as 'actual', 'planned', 'forecast'... | https://cdm.ovh/rsm/schemes/status |  |
+| side.ttl | such as 'left', 'front', 'interior'... | https://cdm.ovh/rsm/schemes/side |  |
 
 # About the ontology template
 
