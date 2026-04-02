@@ -2,6 +2,13 @@
 
 Provide SKOS concepts and concept schemes for use with, inter alia, RSM ontologies.
 
+# Contents
+
+| File | Purpose | Notes |
+| ---- | ------- | ----- |
+| status.ttl | such as 'actual', 'planned', 'forecast'... | |
+| side.ttl | such as 'left', 'front', 'interior'... | |
+
 # About the ontology template
 
 The template is structured in view of using shared **continuous integration** and **documentation** workflows.
