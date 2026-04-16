@@ -8,19 +8,18 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix vann: <http://purl.org/vocab/vann/> .
-@base <https://cdn.ovh/rsm/schemes/side> .
+@base <https://cdm.ovh/rsm/schemes/side#> .
 
 <https://cdm.ovh/rsm/schemes/side> rdf:type owl:Ontology ;
-                                     dc:creator "Airy Magnien" ;
-                                     dc:description "List of terms denoting the faces and sides of, typically, a box-like solid" ;
-                                     dc:title "Sides terminology"@en ;
-                                     vann:preferredNamespacePrefix "side" ;
-                                     vann:preferredNamespaceUri "https://cdm.ovh/rsm/schemes/side" ;
-                                     dcterms:created "2 April 2024" ;
-                                     dcterms:license "https://creativecommons.org/licenses/by-sa/4.0/" ;
-                                     rdfs:comment "designation of faces (left, right...) can be used in conjunction with the side of the faces (interior, exterior). Again, orientation and polarity shall be disambiguated by the context in which they are expressed."@en ;
-                                     skos:scopeNote "Scheme of principal side designations relative to an intrinsic or contextual reference frame. Applicability depends on the geometry, function, or orientation of the entity concerned. The usage context should provide all necessary disambiguation."@en .
+                                    dc:creator "Airy Magnien" ;
+                                    dc:description "List of terms denoting the faces and sides of, typically, a box-like solid" ;
+                                    dc:title "Sides terminology"@en ;
+                                    dcterms:created "2 April 2024" ;
+                                    dcterms:license "https://creativecommons.org/licenses/by-sa/4.0/" ;
+                                    vann:preferredNamespacePrefix "side" ;
+                                    vann:preferredNamespaceUri "https://cdm.ovh/rsm/schemes/side" ;
+                                    rdfs:comment "designation of faces (left, right...) can be used in conjunction with the side of the faces (interior, exterior). Again, orientation and polarity shall be disambiguated by the context in which they are expressed."@en ;
+                                    skos:scopeNote "Scheme of principal side designations relative to an intrinsic or contextual reference frame. Applicability depends on the geometry, function, or orientation of the entity concerned. The usage context should provide all necessary disambiguation."@en .
 
 #################################################################
 #    Annotation properties
@@ -46,6 +45,14 @@ dcterms:created rdf:type owl:AnnotationProperty .
 dcterms:license rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#altLabel
 skos:altLabel rdf:type owl:AnnotationProperty .
 
@@ -56,10 +63,6 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/2004/02/skos/core#scopeNote
 skos:scopeNote rdf:type owl:AnnotationProperty .
-
-vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
-
-vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -86,7 +89,15 @@ skos:ConceptScheme rdf:type owl:Class .
 #    Individuals
 #################################################################
 
-###  https://cdm.ovh/rsm/schemes/sides#Distal
+###  https://cdm.ovh/rsm/schemes/side#Aft
+:Aft rdf:type owl:NamedIndividual ,
+              skos:Concept ;
+     skos:inScheme :Sides_scheme ;
+     rdfs:label "aft"@en ;
+     skos:prefLabel "Rear"@en .
+
+
+###  https://cdm.ovh/rsm/schemes/side#Distal
 :Distal rdf:type owl:NamedIndividual ,
                  skos:Concept ;
         skos:inScheme :Sides_scheme ;
@@ -94,7 +105,24 @@ skos:ConceptScheme rdf:type owl:Class .
         skos:prefLabel "distal"@en .
 
 
-###  https://cdm.ovh/rsm/schemes/sides#Front
+###  https://cdm.ovh/rsm/schemes/side#Down
+:Down rdf:type owl:NamedIndividual ,
+               skos:Concept ;
+      skos:inScheme :Sides_scheme ;
+      rdfs:comment "used by ISO 19148:2021 for offsets"@en ;
+      rdfs:label "down"@en ;
+      skos:prefLabel "lower"@en .
+
+
+###  https://cdm.ovh/rsm/schemes/side#Fore
+:Fore rdf:type owl:NamedIndividual ,
+               skos:Concept ;
+      skos:inScheme :Sides_scheme ;
+      rdfs:label "fore"@en ;
+      skos:prefLabel "front"@en .
+
+
+###  https://cdm.ovh/rsm/schemes/side#Front
 :Front rdf:type owl:NamedIndividual ,
                 skos:Concept ;
        skos:inScheme :Sides_scheme ;
@@ -103,7 +131,7 @@ skos:ConceptScheme rdf:type owl:Class .
        skos:prefLabel "front"@en .
 
 
-###  https://cdm.ovh/rsm/schemes/sides#Inside
+###  https://cdm.ovh/rsm/schemes/side#Inside
 :Inside rdf:type owl:NamedIndividual ,
                  skos:Concept ;
         skos:inScheme :Sides_scheme ;
@@ -112,7 +140,7 @@ skos:ConceptScheme rdf:type owl:Class .
         skos:prefLabel "inside"@en .
 
 
-###  https://cdm.ovh/rsm/schemes/sides#Left
+###  https://cdm.ovh/rsm/schemes/side#Left
 :Left rdf:type owl:NamedIndividual ,
                skos:Concept ;
       skos:inScheme :Sides_scheme ;
@@ -120,7 +148,7 @@ skos:ConceptScheme rdf:type owl:Class .
       skos:prefLabel "left"@en .
 
 
-###  https://cdm.ovh/rsm/schemes/sides#Lower
+###  https://cdm.ovh/rsm/schemes/side#Lower
 :Lower rdf:type owl:NamedIndividual ,
                 skos:Concept ;
        skos:inScheme :Sides_scheme ;
@@ -129,7 +157,7 @@ skos:ConceptScheme rdf:type owl:Class .
        skos:prefLabel "lower"@en .
 
 
-###  https://cdm.ovh/rsm/schemes/sides#Outside
+###  https://cdm.ovh/rsm/schemes/side#Outside
 :Outside rdf:type owl:NamedIndividual ,
                   skos:Concept ;
          skos:inScheme :Sides_scheme ;
@@ -138,7 +166,7 @@ skos:ConceptScheme rdf:type owl:Class .
          skos:prefLabel "outside"@en .
 
 
-###  https://cdm.ovh/rsm/schemes/sides#Proximal
+###  https://cdm.ovh/rsm/schemes/side#Proximal
 :Proximal rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme :Sides_scheme ;
@@ -146,7 +174,7 @@ skos:ConceptScheme rdf:type owl:Class .
           skos:prefLabel "proximal"@en .
 
 
-###  https://cdm.ovh/rsm/schemes/sides#Rear
+###  https://cdm.ovh/rsm/schemes/side#Rear
 :Rear rdf:type owl:NamedIndividual ,
                skos:Concept ;
       skos:inScheme :Sides_scheme ;
@@ -155,7 +183,7 @@ skos:ConceptScheme rdf:type owl:Class .
       skos:prefLabel "rear"@en .
 
 
-###  https://cdm.ovh/rsm/schemes/sides#Right
+###  https://cdm.ovh/rsm/schemes/side#Right
 :Right rdf:type owl:NamedIndividual ,
                 skos:Concept ;
        skos:inScheme :Sides_scheme ;
@@ -163,13 +191,22 @@ skos:ConceptScheme rdf:type owl:Class .
        skos:prefLabel "right"@en .
 
 
-###  https://cdm.ovh/rsm/schemes/sides#Sides_scheme
+###  https://cdm.ovh/rsm/schemes/side#Sides_scheme
 :Sides_scheme rdf:type owl:NamedIndividual ,
                        skos:ConceptScheme ;
               rdfs:label "Sides scheme"@en .
 
 
-###  https://cdm.ovh/rsm/schemes/sides#Upper
+###  https://cdm.ovh/rsm/schemes/side#Up
+:Up rdf:type owl:NamedIndividual ,
+             skos:Concept ;
+    skos:inScheme :Sides_scheme ;
+    rdfs:comment "used by ISO 19148:2021"@en ;
+    rdfs:label "Up"@en ;
+    skos:prefLabel "upper"@en .
+
+
+###  https://cdm.ovh/rsm/schemes/side#Upper
 :Upper rdf:type owl:NamedIndividual ,
                 skos:Concept ;
        skos:inScheme :Sides_scheme ;
